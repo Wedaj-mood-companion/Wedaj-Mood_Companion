@@ -20,5 +20,5 @@ The chatbot will feature a **Graphical User Interface (GUI)** with a chat histor
 
 - Repository created ✅  
 - README prepared ✅  
-- Code implementation ⏳ (planned)  
+- Code implementation - (planned)  
 
