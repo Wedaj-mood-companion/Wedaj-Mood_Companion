@@ -1,5 +1,5 @@
 package com.wedaj.core;
 
-public class Mood {
-    
+public enum Mood {
+    HAPPY, SAD, ANGRY, NEUTRAL
 }
