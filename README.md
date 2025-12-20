@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 # Wedaj-Mood_Companion
 
 **Wedaj - Mood Companion** is a Java-based chatbot designed to interact with users in a friendly, emotionally aware way. It detects simple moods like happy, sad, or angry, and responds with text and emojis to create a more human-like, engaging conversation.
