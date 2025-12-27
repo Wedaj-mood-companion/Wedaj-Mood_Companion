@@ -1,7 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1513246a-125a-4a6b-99d8-655651d06636" name="Changes" comment="" />
+    <list default="true" id="cd92d1c6-7d4c-4605-875b-55396d183ce3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Wedaj_Chat_Bot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Wedaj_Chat_Bot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WedajMoodCompanion/com/wedaj/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WedajMoodCompanion/com/wedaj/core/AngryResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WedajMoodCompanion/com/wedaj/core/ChatBot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WedajMoodCompanion/com/wedaj/core/HappyResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WedajMoodCompanion/com/wedaj/core/Memory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WedajMoodCompanion/com/wedaj/core/Mood.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WedajMoodCompanion/com/wedaj/core/MoodAnalyzer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WedajMoodCompanion/com/wedaj/core/MoodResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WedajMoodCompanion/com/wedaj/core/NeutralResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WedajMoodCompanion/com/wedaj/core/Responder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WedajMoodCompanion/com/wedaj/core/ResponseGenerator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WedajMoodCompanion/com/wedaj/core/ResponseGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WedajMoodCompanion/com/wedaj/core/SadResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Wedaj_Chat_Bot/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Wedaj_Chat_Bot/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Wedaj_Chat_Bot/TestFX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Wedaj_Chat_Bot/com/wedaj/MainApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Wedaj_Chat_Bot/test/java/WedajFXClean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/chatbot/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projects/com/wedaj/MainApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/projects/com/wedaj/TestFX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/ChatBot$Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/ChatBot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/TestFX.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/com/wedaj/MainApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/core/AngryResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/core/ChatBot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/core/HappyResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/core/Memory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/core/Mood.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/core/MoodAnalyzer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/core/MoodResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/core/NeutralResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/core/Responder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/core/ResponseGenerator$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/core/ResponseGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/core/SadResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/production/Wedaj_Chat_Bot/test/java/WedajFXClean.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,58 +53,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 2
-}</component>
-  <component name="ProjectId" id="37Ip4r4OEsca5lxP2YUMxL5DJWs" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Run Main.executor": "Run",
-    "Application.TestFX.executor": "Run",
-    "Application.justbecasue.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "cidr.known.project.marker": "true",
+    "Application.WedajChatBot.executor": "Run",
     "git-widget-placeholder": "feature/response",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ephra/projects/Wedaj_Chat_Bot",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/ephra/projects/Wedaj_Chat_Bot/untitled/src/Main.java",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.WedajChatBot">
-    <configuration name="Run Main" type="Application" factoryName="Application">
-      <option name="ALTERNATIVE_JRE_PATH" value="ms-21" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Wedaj_Chat_Bot" />
-      <option name="PROGRAM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-21.0.9\lib&quot; --add-modules javafx.controls,javafx.fxml" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-21.0.9\lib&quot; --add-modules javafx.controls,javafx.fxml" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Run TestFX" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="TestFX" />
-      <module name="Wedaj_Chat_Bot" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-21.0.9\lib&quot; --add-modules javafx.controls,javafx.fxml" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="WedajChatBot" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Wedaj_Chat_Bot" />
@@ -86,50 +87,9 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Application.Run Main" />
-      <item itemvalue="Application.WedajChatBot" />
-      <item itemvalue="Application.Run TestFX" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Run TestFX" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.29346.138" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="1513246a-125a-4a6b-99d8-655651d06636" name="Changes" comment="" />
-      <created>1766600255587</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1766600255587</updated>
-      <workItem from="1766600259645" duration="1405000" />
-      <workItem from="1766601800145" duration="3221000" />
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/x/src/Main.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Wedaj_Chat_Bot$TestFX.ic" NAME="TestFX Coverage Results" MODIFIED="1766630158955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
