@@ -1,5 +1,5 @@
 package core;
 
 public enum Mood {
-    HAPPY, SAD, ANGRY, NEUTRAL
+    Happy, Sad, Angry, Tired, Excited, Anxious, Neutral, Greeting, Unknown
 }
