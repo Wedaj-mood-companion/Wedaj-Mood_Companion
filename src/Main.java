@@ -7,14 +7,11 @@ import javafx.scene.input.Clipboard;
 import javafx.scene.input.ClipboardContent;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
-<<<<<<< HEAD
 import com.wedaj.core.ChatBot;
-=======
->>>>>>> 8728703bdb5c2cb2367977bd407e61a9158f4a68
 
 public class Main extends Application {
 
-    private boolean isDarkMode = false;
+    private boolean isDarMode = false;
     private VBox chatBox; 
     private BorderPane root;
     private VBox topBox;
@@ -97,15 +94,12 @@ public class Main extends Application {
             
             javafx.animation.PauseTransition pause = new javafx.animation.PauseTransition(javafx.util.Duration.seconds(0.5));
             pause.setOnFinished(event -> {
-<<<<<<< HEAD
                 String response = bot.processMessage(msg);
                 addBubble(response, false);
                 lblMood.setText("Mood: " + bot.getCurrentMood());
-=======
                 ChatBot.Result r = bot.reply(msg);
                 addBubble(r.text, false);
                 lblMood.setText("Mood: " + r.mood);
->>>>>>> 8728703bdb5c2cb2367977bd407e61a9158f4a68
             });
             pause.play();
         }
@@ -149,15 +143,12 @@ public class Main extends Application {
                     if (index != -1 && index < chatBox.getChildren().size() - 1) {
                         chatBox.getChildren().remove(index + 1, chatBox.getChildren().size());
                     }
-<<<<<<< HEAD
                     String response = bot.processMessage(newText);
                     addBubble(response, false);
                     lblMood.setText("Mood: " + bot.getCurrentMood());
-=======
                     ChatBot.Result r = bot.reply(newText);
                     addBubble(r.text, false);
                     lblMood.setText("Mood: " + r.mood);
->>>>>>> 8728703bdb5c2cb2367977bd407e61a9158f4a68
                 });
             });
         }
