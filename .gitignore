@@ -1,0 +1,14 @@
+# Compiled class files
+/out/
+/*.class
+
+# IntelliJ IDEA
+/.idea/
+/*.iml
+
+# JavaFX cache (optional)
+*.jar
+
+# OS files
+.DS_Store
+Thumbs.db
