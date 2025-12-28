@@ -1,55 +1,54 @@
 package core;
 
-import java.util.Map;
-
 public class ResponseGenerator {
-    private final Map<Mood, String> emoji = Map.of(
-            Mood.Happy, "😀",
-            Mood.Sad, "😢",
-            Mood.Angry, "😡",
-            Mood.Tired, "😴",
-            Mood.Excited, "🤩",
-            Mood.Anxious, "😬",
-            Mood.Neutral, "🙂"
-    );
 
-    public MoodResponse getResponse(Mood mood, String userMessage) {
-        return new MoodResponse(mood, emoji.get(mood), userMessage);
-    }
-
+    // Inner class for consistency with your ChatBot usage
     public static class MoodResponse {
-        private final Mood mood;
-        private final String emoji;
-        private final String userMessage;
+        private final String reply;
 
-        public MoodResponse(Mood mood, String emoji, String userMessage) {
-            this.mood = mood;
-            this.emoji = emoji;
-            this.userMessage = userMessage;
+        public MoodResponse(String reply) {
+            this.reply = reply;
         }
 
         public String reply() {
-            switch (mood) {
-                case Happy:
-                    return "I’m glad to hear that! " + emoji;
-                case Sad:
-                    return "I’m sorry you’re feeling low. " + emoji;
-                case Angry:
-                    return "That sounds frustrating. " + emoji;
-                case Tired:
-                    return "Rest matters. " + emoji;
-                case Excited:
-                    return "Love that energy! " + emoji;
-                case Anxious:
-                    return "That sounds stressful. " + emoji;
-                case Neutral:
-                case Unknown:
-                    return "Hmm, I couldn’t quite understand that. 🤔";
-                case Greeting:
-                        return "Hello there! 👋";
-                default:
-                    return "I didn’t understand, can you rephrase? " + emoji;
-            }
+            return reply;
         }
+    }
+
+    public MoodResponse getResponse(Mood mood, String userMessage) {
+        String response;
+
+        switch (mood) {
+            case Greeting:
+                response = "Hello! How are you feeling today?";
+                break;
+            case Happy:
+                response = "I’m glad to hear that! Keep smiling.";
+                break;
+            case Sad:
+                response = "I’m sorry you’re feeling down. Want to talk about it?";
+                break;
+            case Angry:
+                response = "I understand you’re upset. Let’s take a deep breath together.";
+                break;
+            case Excited:
+                response = "That’s awesome! What’s got you so thrilled?";
+                break;
+            case Anxious:
+                response = "It sounds like you’re worried. Remember to pause and breathe.";
+                break;
+            case Tired:
+                response = "You seem exhausted. Maybe a short rest would help.";
+                break;
+            case Neutral:
+                response = "Got it. Tell me more.";
+                break;
+            case Unknown:
+            default:
+                response = "I’m not sure how to interpret that. Could you rephrase?";
+                break;
+        }
+
+        return new MoodResponse(response);
     }
 }
