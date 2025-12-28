@@ -7,12 +7,12 @@ import javafx.scene.input.Clipboard;
 import javafx.scene.input.ClipboardContent;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
-import com.wedaj.core.ChatBot;
+import core.ChatBot;
 
 public class Main extends Application {
 
-    private boolean isDarMode = false;
-    private VBox chatBox; 
+    private boolean isDarkMode = false;
+    private VBox chatBox;
     private BorderPane root;
     private VBox topBox;
     private Label lblTitle, lblMood;
@@ -34,25 +34,25 @@ public class Main extends Application {
         //Top Navigation & Status Bar
         Button btnNewChat = new Button("+ New Chat");
         btnNewChat.setStyle("-fx-background-color: #34495e; -fx-text-fill: white; -fx-background-radius: 20; -fx-cursor: hand;");
-        
+
         lblTitle = new Label("Wedaj AI");
         lblTitle.setStyle("-fx-font-weight: bold; -fx-font-size: 16px;");
-        
+
         lblMood = new Label("Mood: —");
-        
+
         Button btnTheme = new Button("🌙");
         btnTheme.setStyle("-fx-background-radius: 20; -fx-cursor: hand;");
-        
+
         //Layout for top elements: New Chat, Title, Mood, and Theme Toggle
         HBox topContent = new HBox(15, btnNewChat, lblTitle, lblMood, new Region(), btnTheme);
-        HBox.setHgrow(topContent.getChildren().get(4), Priority.ALWAYS); 
+        HBox.setHgrow(topContent.getChildren().get(4), Priority.ALWAYS);
         topContent.setAlignment(Pos.CENTER_LEFT);
-        
+
         topBox = new VBox(topContent);
         topBox.setPadding(new Insets(15));
         topBox.setStyle("-fx-background-color: white; -fx-border-color: #EEE; -fx-border-width: 0 0 1 0;");
 
-        //Bottom Message Input Area 
+        //Bottom Message Input Area
         txtInput = new TextField();
         txtInput.setPromptText("Type your message...");
         txtInput.setPrefHeight(45);
@@ -91,18 +91,21 @@ public class Main extends Application {
         if (!msg.isEmpty()) {
             addBubble(msg, true);
             txtInput.clear();
-            
+
             javafx.animation.PauseTransition pause = new javafx.animation.PauseTransition(javafx.util.Duration.seconds(0.5));
             pause.setOnFinished(event -> {
-                String response = bot.processMessage(msg);
-                addBubble(response, false);
-                lblMood.setText("Mood: " + bot.getCurrentMood());
-                ChatBot.Result r = bot.reply(msg);
-                addBubble(r.text, false);
-                lblMood.setText("Mood: " + r.mood);
+                try {
+                    ChatBot.Result r = bot.reply(msg);
+                    addBubble(r.text, false);
+                    lblMood.setText("Mood: " + r.mood);
+                } catch (Exception e) {
+                    addBubble("Oops, something went wrong. Please try again.", false);
+                    e.printStackTrace();
+                }
             });
             pause.play();
         }
+
     }
 
     // Creates and adds a chat bubble to the UI with copy/edit functionality
@@ -116,9 +119,9 @@ public class Main extends Application {
         // Sets icon color to remain visible during theme changes
         String iconColor = isDarkMode ? "#CCC" : "#666";
 
-        Button btnCopy = new Button("❐"); 
+        Button btnCopy = new Button("❐");
         btnCopy.setStyle("-fx-background-color: transparent; -fx-cursor: hand; -fx-font-size: 14; -fx-text-fill: " + iconColor + ";");
-        
+
         HBox actionBar = new HBox(5, btnCopy);
         actionBar.setVisible(false); // Icons hidden until hover
         actionBar.setAlignment(isUser ? Pos.CENTER_RIGHT : Pos.CENTER_LEFT);
@@ -133,19 +136,16 @@ public class Main extends Application {
                 TextField editField = new TextField(lbl.getText());
                 editField.setStyle("-fx-background-radius: 15; -fx-border-color: #34495e; -fx-border-radius: 15;");
                 bubbleStack.getChildren().setAll(editField);
-                
+
                 editField.setOnAction(ev -> {
                     String newText = editField.getText();
                     lbl.setText(newText);
                     bubbleStack.getChildren().setAll(lbl);
-                    
+
                     int index = chatBox.getChildren().indexOf(bubbleStack.getParent().getParent());
                     if (index != -1 && index < chatBox.getChildren().size() - 1) {
                         chatBox.getChildren().remove(index + 1, chatBox.getChildren().size());
                     }
-                    String response = bot.processMessage(newText);
-                    addBubble(response, false);
-                    lblMood.setText("Mood: " + bot.getCurrentMood());
                     ChatBot.Result r = bot.reply(newText);
                     addBubble(r.text, false);
                     lblMood.setText("Mood: " + r.mood);
