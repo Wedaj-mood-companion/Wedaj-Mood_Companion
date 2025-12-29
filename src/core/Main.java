@@ -58,7 +58,7 @@ public class Main extends Application {
         lstChat.setItems(currentChat);
 
         TextField txtInput = new TextField();
-        txtInput.setPromptText("How are you feeling today?");
+        txtInput.setPromptText("Hey! How are you feeling today?");
         txtInput.setPrefWidth(400);
 
         Button btnSend = new Button("Send");
