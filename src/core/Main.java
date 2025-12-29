@@ -61,7 +61,7 @@ public class Main extends Application {
         txtInput.setPromptText("Hey! How are you feeling today?");
         txtInput.setPrefWidth(400);
 
-        Button btnSend = new Button("Send");
+        Button btnSend = new Button("Send", new ImageView(new Image("file:src/icons/send.png", 18, 18, true, true)));
 
         // --- Icons & Navigation ---
         Button btnToggleHistory = new Button("History", new ImageView(new Image("file:src/icons/history.png", 18, 18, true, true)));
