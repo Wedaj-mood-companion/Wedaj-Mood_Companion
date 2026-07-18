@@ -1,0 +1,15 @@
+﻿C:\Users\Enas\Desktop\Wedaj-Mood_Companion\src\Main.java
+C:\Users\Enas\Desktop\Wedaj-Mood_Companion\src\TestFX.java
+C:\Users\Enas\Desktop\Wedaj-Mood_Companion\src\com\wedaj\MainApp.java
+C:\Users\Enas\Desktop\Wedaj-Mood_Companion\src\com\wedaj\core\ChatBot.java
+C:\Users\Enas\Desktop\Wedaj-Mood_Companion\src\com\wedaj\core\Main.java
+C:\Users\Enas\Desktop\Wedaj-Mood_Companion\src\com\wedaj\core\Memory.java
+C:\Users\Enas\Desktop\Wedaj-Mood_Companion\src\com\wedaj\core\MoodAnalyzer.java
+C:\Users\Enas\Desktop\Wedaj-Mood_Companion\src\com\wedaj\core\ResponseGenerator.java
+C:\Users\Enas\Desktop\Wedaj-Mood_Companion\src\core\ChatBot.java
+C:\Users\Enas\Desktop\Wedaj-Mood_Companion\src\core\Memory.java
+C:\Users\Enas\Desktop\Wedaj-Mood_Companion\src\core\Mood.java
+C:\Users\Enas\Desktop\Wedaj-Mood_Companion\src\core\MoodAnalyzer.java
+C:\Users\Enas\Desktop\Wedaj-Mood_Companion\src\core\ResponseGenerator.java
+C:\Users\Enas\Desktop\Wedaj-Mood_Companion\src\core\SignupManager.java
+C:\Users\Enas\Desktop\Wedaj-Mood_Companion\src\test\java\WedajFXClean.java
